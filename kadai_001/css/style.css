@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    color: #000000;
+    background-color: #ffffff;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: bold; */
+    font-style: normal;
+    
+}
+/* PC用 */
+@media screen and (min-width: 768px) {
+    header {
+        max-width: 980px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto 0 auto;
+        padding: 32px 16px 32px 16px;
+    }
+    header > h1 {
+        border: solid;
+        padding: 0px 20px;
+    }
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+    nav {
+        padding-top: 20px;
+    }
+    .nav-pc {
+        font-size: 34px;
+        margin-left: 20px;
+    }
+
+    #main-visual {
+        width: 100%;
+    }
+
+    .index-h2 {
+        text-align: center;
+        margin: 50px 0 50px 0;
+        font-size: 34px;
+
+    }
+
+    .about-content {
+        display: flex;
+        justify-content: center;
+        margin: 0 50px 0 50px;
+    }
+
+    .about-image {
+        border-radius: 50%;
+        margin: 0 100px 0 100px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    ul > li {
+        font-size: 18px;
+    }
+
+    .works-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .photo {
+        margin: 0 10px;
+        width: 20%;
+        padding-bottom: 50px;
+
+    }
+    .photo > img {
+        margin: 0 auto 0 auto;
+        width: 100%;
+    }
+    .photo > p {
+        text-align: center;
+        font-size: 18px;
+    }
+    footer > p {
+        text-align: center;
+    }
+}
+/* スマホ用 */
+@media screen and (max-width: 767px) {
+    body {
+        margin: 0;
+    }
+    header {
+        max-width: 540px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto 0 auto;
+        padding: 20px 16px 20px 16px;
+    }
+
+    header > h1 {
+        border: solid;
+        padding: 0px 20px;
+        font-size: 28px;
+    }
+    #main-visual {
+        max-width: 100%;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    nav {
+        padding-top: 20px;
+        display: flex;
+    }
+
+    .nav-pc {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+
+    .index-h2 {
+        text-align: center;
+        margin: 30px 0 30px 0;
+        font-size: 34px;
+    }
+
+    .about-content {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 20px auto;
+        max-width: 960px;
+    }
+
+    img {
+        margin: 0 auto;
+    }
+
+    .about-image {
+        border-radius: 50%;
+    }
+
+    .profile {
+        padding: 0 20px;
+        font-size: 18px;
+    }
+
+    .works-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+
+    .photo {
+        /* width: 100%; */
+        text-align: center;
+        padding-bottom: 40px;
+        margin: 0 10px;
+        width: 100%;
+    }
+
+    .photo > img {
+        width: 100%;
+    }
+
+    .photo > p {
+        font-size: 20px;
+    }
+
+    footer {
+        text-align: center;
+    }
+    
+}
